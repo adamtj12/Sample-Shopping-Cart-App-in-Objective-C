@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="tyD-TC-Y8d" customClass="CollectionViewCellTotal">
+            <rect key="frame" x="0.0" y="0.0" width="305" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="305" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" tag="113" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2BA-fi-Jwu">
+                        <rect key="frame" x="218" y="0.0" width="87" height="87"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="87" id="cLe-Ia-Og7"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tK4-nh-lnz">
+                        <rect key="frame" x="0.0" y="0.0" width="199" height="87"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="tK4-nh-lnz" secondAttribute="bottom" id="LWa-Vz-ANY"/>
+                <constraint firstItem="tK4-nh-lnz" firstAttribute="top" secondItem="tyD-TC-Y8d" secondAttribute="top" id="Mtt-UI-Sl7"/>
+                <constraint firstAttribute="trailing" secondItem="2BA-fi-Jwu" secondAttribute="trailing" id="QYS-iA-P4h"/>
+                <constraint firstItem="2BA-fi-Jwu" firstAttribute="leading" secondItem="tK4-nh-lnz" secondAttribute="trailing" constant="19" id="WOa-PO-pny"/>
+                <constraint firstItem="tK4-nh-lnz" firstAttribute="top" secondItem="2BA-fi-Jwu" secondAttribute="top" id="bNB-Pl-KhM"/>
+                <constraint firstItem="tK4-nh-lnz" firstAttribute="bottom" secondItem="2BA-fi-Jwu" secondAttribute="bottom" id="oDc-Ei-Abv"/>
+                <constraint firstItem="tK4-nh-lnz" firstAttribute="leading" secondItem="tyD-TC-Y8d" secondAttribute="leading" id="sNu-Pg-rVP"/>
+            </constraints>
+            <size key="customSize" width="326" height="71"/>
+            <connections>
+                <outlet property="priceField" destination="2BA-fi-Jwu" id="r4H-Pq-Lxm"/>
+            </connections>
+            <point key="canvasLocation" x="-112.5" y="121.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
